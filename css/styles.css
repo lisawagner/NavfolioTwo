@@ -243,6 +243,10 @@ h3 {
     grid-template-rows: auto 1fr auto;
 }
 
+.card:hover {
+    transform: scale(1.02);
+}
+
 .card-img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
