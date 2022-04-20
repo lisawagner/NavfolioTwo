@@ -1,6 +1,7 @@
 let menu = document.querySelector('#menu-btn');
 let header = document.querySelector('#headerMain');
 let hide = document.querySelector('.hide-menu')
+// let specialTyped = document.querySelector('#special-typed');
 
 hide.onclick = () => {
     header.classList.remove('active');
@@ -17,10 +18,16 @@ window.onscroll = () => {
 }
 
 // Typed.js //
-
-
 let typed = new Typed('.typed', {
     strings: ["Lifelong Learner...", "Front-End Developer...", "Solutions Creator..."],
+    loop: true,
+    typeSpeed: 80,  
+    backSpeed: 50,
+    backDelay: 2000
+});
+
+let specialTyped = new Typed('.special-typed', {
+    strings: ["Nice to meet you!", "Let's build something amazing!"],
     loop: true,
     typeSpeed: 80,  
     backSpeed: 50,

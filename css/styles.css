@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --white: #f8f8ff;
-    
-    --black: #343a40;
+    /* --white: #f8f8ff; */
+    --white: #fcfcff;
+    --black: #000;
     --dark-grey: #343a40;
     --primary-colour: #6E6E6E;
     --secondary-colour: orange;
@@ -168,7 +168,7 @@ h3 {
 }
 
 .social-item a {
-    color: var(--black);
+    color: var(--dark-grey);
 }
 
 .social-item a:hover {
@@ -293,33 +293,91 @@ h3 {
 }
 
 /* Contact Section */
-.contact-row {
+/* .contact-row {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-}
+} */
 
-.contact-left {
+/* .contact-left {
     display: flex;
     flex: 0 0 auto;
     width: 100%;
-    /* width: 40%; */
     align-items: stretch;
-}
+} */
 
-.contact-col {
+/* .contact-col {
     padding: 30px;
     width: 100%;
     box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
-}
+} */
 
-.contact-right {
+/* .contact-right {
     display: flex;
     flex: 0 0 auto;
     width: 100%;
-    /* width: 57%; */
     align-items: stretch;
+} */
+
+.form-wrapper {
+    width: 100%;
+    background: #fcfcff;
+    /* padding: 2rem; */
+    /* background: #fff; */
+    /* box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.028), 0 0px 5.3px rgba(0, 0, 0, 0.04),
+                0 0px 10px rgba(0, 0, 0, 0.05), 0 0px 17.9px rgba(0, 0, 0, 0.06),
+                0 0px 33.4px rgba(0, 0, 0, 0.072), 0 0px 80px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 3.6rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    /* border: none; */
+    border-radius: 5px;
+    background: var(--dark-grey);
+    cursor: pointer;
+}
+
+i {
+    margin-right: 0.5rem;
+}
+
+.submit:hover {
+    background: var(--secondary-colour);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border: 1px solid #222;
 }
 
 /* Menu Button */
@@ -334,7 +392,7 @@ h3 {
     font-size: 1.75rem;
     cursor: pointer;
     text-align: center;
-    color:var(--primary-colour);
+    color: var(--primary-colour);
     display: initial;
 }
 
@@ -392,11 +450,11 @@ h3 {
     /* .cards {
         grid-template-columns: repeat(3, 1fr);
     } */
-    .contact-left {
+    /* .contact-left {
         width: 40%;
-    }
+    } */
 
-    .contact-right {
+    /* .contact-right {
         width: 57%;
-    }
+    } */
 }
