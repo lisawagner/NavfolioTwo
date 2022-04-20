@@ -95,7 +95,6 @@ h3 {
 }
 
 .resume-section {
-    /* height: 100vh; */
     padding: 4rem 3rem;
     border-bottom: 1px solid #dee2e6;
 }
@@ -293,6 +292,35 @@ h3 {
     margin: 0.25rem 0.25rem 0;
 }
 
+/* Contact Section */
+.contact-row {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact-left {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    /* width: 40%; */
+    align-items: stretch;
+}
+
+.contact-col {
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.contact-right {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    /* width: 57%; */
+    align-items: stretch;
+}
 
 /* Menu Button */
 #menu-btn {
@@ -355,6 +383,8 @@ h3 {
         display: none;
     }
 
+
+
 }
 
 /* Extra Large Size screens */
@@ -362,4 +392,11 @@ h3 {
     /* .cards {
         grid-template-columns: repeat(3, 1fr);
     } */
+    .contact-left {
+        width: 40%;
+    }
+
+    .contact-right {
+        width: 57%;
+    }
 }
