@@ -37,10 +37,12 @@ body {
     color: var(--primary-colour);
     padding-top: 0;
     /* line-height: 1.5rem; */
+    
 }
 
 p {
     line-height: 1.5rem;
+    font-size: 1.25rem;
 }
 
 h1,
@@ -77,7 +79,7 @@ h3 {
 }
 
 .mb-1 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 }
 
 .mb-3 {
@@ -186,7 +188,7 @@ h3 {
 .skills-cell {
     flex: 1;
     /* margin: auto; */
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .grid-gutters {
@@ -213,7 +215,7 @@ h3 {
 }
 
 .skills-desc {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 
@@ -419,6 +421,9 @@ h3 {
 @media (min-width: 767px) {
     .grid-full > .skills-cell {
         flex: 0 0 calc(50% - 1em);
+    }
+    p {
+        font-size: 1.15rem;
     }
     /* .cards {
         grid-template-columns: repeat(2, 1fr);
